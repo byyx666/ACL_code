@@ -1,0 +1,12 @@
+easydict==1.13
+matplotlib==3.8.0
+matplotlib==3.6.0
+numpy==1.25.0
+Pillow==11.2.1
+scikit_learn==1.4.0
+scipy==1.15.3
+timm==0.6.12
+torch==2.4.1
+torchvision==0.19.1
+tqdm==4.62.3
+umap==0.1.1
