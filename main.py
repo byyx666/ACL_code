@@ -2,7 +2,7 @@ import json
 import argparse
 from trainer import train
 
-default_config = './exps/l2p.json'
+default_config = './exps/l2p_inr.json'
 
 def main():
     args = setup_parser().parse_args()
