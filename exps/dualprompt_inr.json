@@ -25,7 +25,7 @@
     "warm": true,
     "warm_lr": 1e-6,
     "warm_epochs": 1,
-    "warm_temp": 2,
+    "warm_temp": 0.1,
 
     "global_pool": "token",
     "head_type": "token",

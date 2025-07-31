@@ -270,15 +270,19 @@ class Learner(BaseLearner):
             self._network.original_backbone.eval()
             losses = 0.0
 
+            proto_selected = self.proto_list
+            proto_selected = F.normalize(proto_selected, dim=1)
+                
             for i, (_, inputs, targets) in enumerate(train_loader):
                 inputs, targets = inputs.to(self._device), targets.to(self._device)
                 fake_targets = targets - self._known_classes
 
                 embeddings = self._network(inputs, task_id=self._cur_task, train=True)["pre_logits"]
-                logits_proto = torch.cdist(embeddings, self.proto_list)
-                logits_proto = -logits_proto
-                                
-                loss = F.cross_entropy(logits_proto/self.warm_temp, fake_targets)
+                embeddings = F.normalize(embeddings, dim=1)
+                logits_proto = torch.mm(embeddings, proto_selected.t())
+                
+                loss_clf = F.cross_entropy(logits_proto/self.warm_temp, fake_targets)
+                loss = loss_clf
 
                 optimizer.zero_grad()
                 loss.backward()
