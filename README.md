@@ -8,6 +8,7 @@
     <a>ChunHui Ding</a>&emsp;
     <a href='https://yn-sun.github.io/' target='_blank'>Yanan Sun&#9993</a>&emsp;
 </div>
+<strong>Accepted to <a href='https://aaai.org/conference/aaai/aaai-26/' target='_blank'>AAAI 2026</a> :partying_face:</strong>
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2506.03956)
 [![GitHub Stars](https://img.shields.io/github/stars/byyx666/ACL_code?style=social)](https://github.com/byyx666/ACL_code)
@@ -55,11 +56,11 @@ Replace `[MODEL]` with any configuration file in `/exps`, e.g.  `l2p_inr` …
 
 If you find this repo useful, please consider citing our paper.
 ```bibtex
-@article{lu2025adapt,
+@misc{lu2025adapt,
   title={Adapt before Continual Learning},
   author={Lu, Aojun and Feng, Tao and Yuan, Hangjie and Ding, Chunhui and Sun, Yanan},
-  journal={arXiv preprint arXiv:2506.03956},
-  year={2025}
+  journal={AAAI},
+  year={2026}
 }
 ```
 
