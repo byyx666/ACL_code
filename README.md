@@ -56,10 +56,10 @@ Replace `[MODEL]` with any configuration file in `/exps`, e.g.  `l2p_inr` …
 
 If you find this repo useful, please consider citing our paper.
 ```bibtex
-@misc{lu2025adapt,
-  title={Adapt before Continual Learning},
+@inproceedings{lu2025adapt,
+  title={Adapt Before Continual Learning},
   author={Lu, Aojun and Feng, Tao and Yuan, Hangjie and Ding, Chunhui and Sun, Yanan},
-  journal={AAAI},
+  booktitle={AAAI},
   year={2026}
 }
 ```
